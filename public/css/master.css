@@ -1020,7 +1020,7 @@ h2.workheading {
     align-content: center;
     width: 100%;
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contactmetexts {
@@ -1098,12 +1098,12 @@ h2.workheading {
         flex-direction: column;
     }
     .contactmetexts{
+        flex-basis: auto;
         height: 100vh;
         padding: 100px 155px;
     }
     .formcontainer {
-        /* order: -1; */
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
