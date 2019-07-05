@@ -1,0 +1,23 @@
+{
+  "name": "yasminportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.16.2",
+    "nodemailer": "^6.2.1",
+    "popup": "0.0.3",
+    "popups": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asyrul",
+  "license": "ISC"
+}

@@ -1,0 +1,70 @@
+<% include ../partials/header %>
+    <section class="landing" id="aboutlanding">
+        <div class="landingcontent darktheme" id="aboutcontent">
+            <div class="background aboutphoto"></div>
+            <div class="aboutlandingtexts">
+                <div class="aboutheading">
+                    <h2>It's me,</h2>
+                    <br>
+                    <h2>Yasmin!</h2>
+                </div>
+                <div class="paragraphs">
+                    <p>Malaysian born and bred. I spent 2 out of 3 degree years in UK studying 
+                    Interactive Media Design at the University Of Hertfordshire in Hatfield.</p>
+                    
+                    <p>My dream job was to do animation at Pixar or Dreamworks or something, but 
+                    hey I landed my first job in a bank. Thankful for it though, because I was 
+                    able to help them out with their digital banking platforms’ UI and UX. 
+                    (Also I think it might require less patience than animation)</p>
+
+                    <p>Giving someone a good experience really does spark some type of joy and satisfaction in me. 
+                    I love giving them out as much as I love a good experience myself.</p>
+
+                    <p>When I’m not at work I’m making awesome meals and shredding on my 
+                    Gibson Les Paul (I wish).</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="aboutcontactme darktheme" id="aboutcontactme">
+        <div class="contactmecontent">
+            <div class="contactmetexts">
+                <div class="aboutheading contactmehidden" id="aboutheading">
+                    <h3>Let's Get</h3>
+                    <br>
+                    <h3>in Touch!</h3>
+                </div>
+            
+                <div class="contactinfo contactmehidden" id="contactinfo">
+                    <p>+60122829146</p>
+                    <p>yasminraihan@gmail.com</p>
+                    <p>LinkedIn</p>
+                </div>    
+            </div>
+            <div class="formcontainer">
+                <div class="contactform">
+                    <!-- Mail send success -->
+                   
+                    <% if(messages.success){ %>
+                    <div class="emailsuccess">
+                        <%= messages.success; %>
+                    </div>
+                    <% } else if(messages.error){ %>
+                    <div class="emailerror">
+                        <%= messages.error; %>
+                    </div>
+                    <% } %>
+
+                    <form action="/about" method="POST" class="formhidden" id="contactmeform">
+                        <input type="text" class="formfont" id="name" name="name" placeholder="Name">
+                        <input type="email" class="formfont" id="email" name="email" placeholder="Email">
+                        <textarea class="formfont" id="message" name="message" placeholder="I like you, you're hired!"></textarea>
+                        <input type="submit" value="SEND IT!">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<% include ../partials/aboutfooter %>
