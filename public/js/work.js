@@ -27,7 +27,8 @@ $(function(){
     var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
     if(workids.includes(page_id)){
         //load all sections
-        loadAllSections();
+        loadAllContents();
+        // loadAllSections();
  
         setTimeout(() => {
             $('html, body').animate({
@@ -71,41 +72,35 @@ $(function(){
             $("#totop").fadeOut();
         }
 
-        // if(currentposition > triggerBottomPosition){
-        //     // $("#dowanduit").load('/ajax/dowan');
-
-        //     // setTimeout( function(){
-        //     //     $("#dowanduit").removeClass("hidden");
-
-        //     // },100);
-        //     loadDowan();
-
-        // }
-
         // Load section upon scrolling
         if(currentposition > duitnowSectionTriggerOffset){
             $("#totop").fadeIn();
-            // loadcontent("#duitnowcontent");
-            loadSectionContent("duitnow");
+            loadContent("duitnow");
+            //loadSectionContent("duitnow");
         }
         
         if(currentposition > quickaccessSectionTriggerOffset){
-            loadSectionContent("quickaccess");
+            loadContent("quickaccess");
+            //loadSectionContent("quickaccess");
         }
         
         if(currentposition > cardactivationSectionTriggerOffset){
-            loadSectionContent("cardactivation");
+            loadContent("cardactivation");
+            //loadSectionContent("cardactivation");
         }
         if(currentposition > tydeeSectionTriggerOffset){
-            loadSectionContent("tydee");
+            loadContent("tydee");
+            //loadSectionContent("tydee");
         }
         
         if(currentposition > letitburnSectionTriggerOffset){
-            loadSectionContent("letitburn");
+            loadContent("letitburn");
+            //loadSectionContent("letitburn");
         }
         
         if(currentposition > showreelSectionTriggerOffset){
-            loadSectionContent("showreel");
+            loadContent("showreel");
+            //loadSectionContent("showreel");
         }
     });
 
@@ -125,9 +120,12 @@ $(function(){
 })
 
 // Declare load content functions here
-function loadcontent(id){
-    if($(id).hasClass("hidden")){
-        $(id).removeClass("hidden");
+function loadContent(id){
+    let idcontent = '#' + id + 'content';
+    console.log(idcontent);
+    
+    if($(idcontent).hasClass("hidden")){
+        $(idcontent).removeClass("hidden");
     }
 }
 
@@ -149,6 +147,12 @@ function loadSectionContent(id){
 function loadAllSections(){
     workids.forEach(workid => {
         loadSectionContent(workid);
+    });
+}
+
+function loadAllContents(){
+    workids.forEach(workid => {
+        loadContent(workid);
     });
 }
 

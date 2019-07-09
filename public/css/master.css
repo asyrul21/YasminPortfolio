@@ -34,9 +34,9 @@ html body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
 
-    animation: appear 1s forwards;
+    /*animation: appear 1s forwards;*/
 }
 
 #homebackground {
@@ -337,17 +337,18 @@ section.workpreview {
 
 /* To top arrow*/
 a.totop {
-    color: rgba(255, 255, 255, 1);   
+    /*color: rgba(255, 255, 255, 1);   */
+    color: rgba(189, 195, 199, 1); 
     position: fixed;
     bottom: 50px;
     right: 100px;
     z-index: 1;
     /* opacity: 0; */
 
-    border: white 1px solid;
-    border-radius: 100%;
-    padding: 10px;
-    background: rgba(2, 9, 44, 0.808)
+    /*border: white 1px solid;*/
+    /*border-radius: 100%;*/
+    /*padding: 10px;*/
+    /*background: rgba(2, 9, 44, 0.808)*/
 }
 
 /* Work Preview */
@@ -585,7 +586,7 @@ footer p {
 
 .workcontent {
     text-align: left;
-    transition: opacity 1s ease 0.5s;
+    transition: opacity 1.3s ease 0.2s;
 
     display: flex;
     flex-direction: column;
@@ -1035,7 +1036,7 @@ h2.workheading {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: flex-end;
 }
 

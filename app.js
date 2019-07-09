@@ -57,7 +57,8 @@ app.post('/about' , function(req, res){
 
   var smtpConfig = {
     // best to not use gmail
-    host: 'smtp.gmail.comx',
+    // host: 'smtp.mail.yahoo.com',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true, // use SSL
     auth: {
@@ -75,7 +76,7 @@ app.post('/about' , function(req, res){
   
   var mailOptions = {
     from: `Nodemailer Mail <${email}>`,
-    to: 'asyrulhafetzy.21@gmail.com',
+    to: 'yasminraihan@gmail.com',
     subject: 'New Message from Your Portfolio!',
     text: 'Hi!',
     html: output
@@ -97,38 +98,31 @@ app.post('/about' , function(req, res){
 
 // AJAX CALLS
 // 
-app.get('/ajax/duitnow', preventuser,  function(req, res){
-  res.sendFile('views/hidden/duitnow.html', {root: __dirname });
-  // res.redirect('/work');
-});
-app.get('/ajax/quickaccess', preventuser,  function(req, res){
-  res.sendFile('views/hidden/quickaccess.html', {root: __dirname });
-  // res.redirect('/work');
-});
-app.get('/ajax/cardactivation', preventuser,  function(req, res){
-  res.sendFile('views/hidden/cardactivation.html', {root: __dirname });
-  // res.redirect('/work');
-});
-app.get('/ajax/tydee', preventuser,  function(req, res){
-  res.sendFile('views/hidden/tydee.html', {root: __dirname });
-  // res.redirect('/work');
-});
-app.get('/ajax/letitburn', preventuser,  function(req, res){
-  res.sendFile('views/hidden/letitburn.html', {root: __dirname });
-  // res.redirect('/work');
-});
-app.get('/ajax/showreel', preventuser,  function(req, res){
-  res.sendFile('views/hidden/showreel.html', {root: __dirname });
-  // res.redirect('/work');
-});
+// app.get('/ajax/duitnow', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/duitnow.html', {root: __dirname });
+//   // res.redirect('/work');
+// });
+// app.get('/ajax/quickaccess', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/quickaccess.html', {root: __dirname });
+//   // res.redirect('/work');
+// });
+// app.get('/ajax/cardactivation', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/cardactivation.html', {root: __dirname });
+//   // res.redirect('/work');
+// });
+// app.get('/ajax/tydee', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/tydee.html', {root: __dirname });
+//   // res.redirect('/work');s
+// });
+// app.get('/ajax/letitburn', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/letitburn.html', {root: __dirname });
+//   // res.redirect('/work');
+// });
+// app.get('/ajax/showreel', preventuser,  function(req, res){
+//   res.sendFile('views/hidden/showreel.html', {root: __dirname });
+//   // res.redirect('/work');
+// });
 
-function preventuser(req, res, next){
-  // console.log(req);
-  next();
-  // if(req){
-  //   return false;
-  // }
-}
 
 app.listen(process.env.PORT, process.env.IP, function () {
   console.log('Yasmin app listening on port 3000!');
