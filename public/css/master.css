@@ -226,7 +226,7 @@ section {
 }
 
 section:not(.landing){
-    padding-bottom: 190px;
+    /*padding-bottom: 190px;*/
 }
 
 section.workpreview {
@@ -597,6 +597,7 @@ footer p {
 /* Set Backgrounds */
 .worksection {
     /* min-height: 100vh; */
+    /*border: blue 2px solid;*/
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -605,31 +606,7 @@ footer p {
     z-index: -1;
 
     transition: opacity 1s ease;
-}
-
-/* Best to use colors for background, 
-for rendering performance */
-.duitnow {
-    /* background: #000000; */
-    background: #ABE1ED;
-}
-
-.quickaccess {
-    background: white;
-}
-
-.cardactivation {
-    /* background: #183D48; */
-    background: #322072;
-}
-
-.tydee {
-    /* background: #000000; */
-    background: white;
-}
-
-.letitburn {
-    background: #488BB9;
+    position: relative;
 }
 
 .showreel {
@@ -669,91 +646,57 @@ h2.workheading {
     background-clip: content-box;
     background-position: center;
     opacity: 0.95;
-    height: 30vh;
-}
-
-#duitnow .workphoto , #cardactivation .workphoto,
-#letitburn .workphoto {
-    flex-basis: 30%;
-}
-
-#quickaccess .workphoto, #tydee .workphoto,
-#showreel .workphoto {
+    
     flex: 1;
     height: 50vh;
 }
 
 /* Duit now photos */
-.duitnowphoto1{ 
-    background-image: url(../images/mobileapp.jpg);
+.duitnowphoto{ 
+    background-image: url(../images/banners/duitnowbanner.png);
     transition:opacity 1s ease 0s; 
 
 }
-.duitnowphoto2{ 
-    background-image: url(../images/mobileapp.jpg); 
-    transition:opacity 1s ease .5s; 
-}
-.duitnowphoto3{ 
-    background-image: url(../images/mobileapp.jpg);
-    transition:opacity 1s ease 1s;  
-}
 
-/* Duit later photos */
 .quickaccessphoto{ 
-    background-image: url(../images/mobileapp.jpg);
+    background-image: url(../images/banners/quickaccessbanner.png);
     transition:opacity 1s ease 1s;  
 }
 
 /* Dowan do it photos */
-.cardactivationphoto1{ 
-    background-image: url(../images/mobileapp.jpg);
+.cardactivationphoto{ 
+    background-image: url(../images/banners/cardactivationbanner.png);
     transition:opacity 1s ease 0s; 
 
-}
-.cardactivationphoto2{ 
-    background-image: url(../images/mobileapp.jpg); 
-    transition:opacity 1s ease .5s; 
-}
-.cardactivationphoto3{ 
-    background-image: url(../images/mobileapp.jpg);
-    transition:opacity 1s ease 1s;  
 }
 
 /* duit now 2 photo */
 .tydeephoto{ 
-    background-image: url(../images/mobileapp.jpg);
+    background-image: url(../images/banners/tydeebanner.png);
     transition:opacity 1s ease 1s;  
 }
 
 /* duitlater2photos */
-.letitburnphoto1{ 
-    background-image: url(../images/mobileapp.jpg);
+.letitburnphoto{ 
+    background-image: url(../images/banners/letitburnbanner.png);
     transition:opacity 1s ease 0s; 
 
 }
-.letitburnphoto2{ 
-    background-image: url(../images/mobileapp.jpg); 
-    transition:opacity 1s ease .5s; 
-}
-.letitburnphoto3{ 
-    background-image: url(../images/mobileapp.jpg);
-    transition:opacity 1s ease 1s;  
-}
 
-/* card activation 2 photo */
 .showreelphoto{ 
-    background-image: url(../images/mobileapp.jpg);
+    background-image: url(../images/banners/showreelbanner.png);
     transition:opacity 1s ease 1s;  
 }
 
 .workcontenttext {
+    /*border: red 2px solid;*/
     display: flex;
     justify-content: space-between;
     align-items: top;
 
     width: 100%;
     min-height: 40vh;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* .description{
@@ -771,16 +714,22 @@ h2.workheading {
 
 .workdescription {
     flex-basis: 70%;
+    /*border: green 2px solid;*/
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
+}
+
+.txtgrp {
+    margin-bottom: 30px;
+    /*border: red 1px solid;*/
 }
 
 .txtgrp h3 {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     line-height: 30px;
 }
@@ -788,6 +737,31 @@ h2.workheading {
 .txtgrp p {
     font-size: 14px;
     line-height: 21px;
+    margin-top: 1%;
+    
+}
+
+.txtgrp a {
+    text-decoration: none;
+}
+
+.txtgrp a:hover{
+    opacity: 0.5;
+}
+
+.seperator{
+    /*border: blue solid 2px;*/
+    background-image: url(../images/separator.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 36px;
+    
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    
 }
 
 /* Mobile */

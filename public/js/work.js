@@ -13,7 +13,7 @@ $(function(){
 
     //scroll to top
     $(document).ready(function(){
-        console.log(this);
+        // console.log(this);
         $(this).scrollTop(0);
     });
 
@@ -122,7 +122,6 @@ $(function(){
 // Declare load content functions here
 function loadContent(id){
     let idcontent = '#' + id + 'content';
-    console.log(idcontent);
     
     if($(idcontent).hasClass("hidden")){
         $(idcontent).removeClass("hidden");
