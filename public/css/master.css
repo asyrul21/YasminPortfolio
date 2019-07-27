@@ -599,14 +599,13 @@ footer p {
     /* min-height: 100vh; */
     /*border: blue 2px solid;*/
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    z-index: -1;
-
-    transition: opacity 1s ease;
+    /*transition: opacity 1s ease;*/
     position: relative;
+}
+
+section.worksection:last-of-type {
+    padding-bottom: 200px;
 }
 
 .showreel {
@@ -629,6 +628,8 @@ h2.workheading {
    
     width: 100%;
     margin-bottom: 20px;
+    
+    /*border:blue 2px solid;*/
 
 }
 
@@ -685,7 +686,16 @@ h2.workheading {
 
 .showreelphoto{ 
     background-image: url(../images/banners/showreelbanner.png);
-    transition:opacity 1s ease 1s;  
+    /*background: white;*/
+    transition:opacity 0.3s ease;  
+}
+
+#showreellink {
+    transition-delay: 0;
+}
+
+#showreellink:hover{
+    opacity: 0.5;
 }
 
 .workcontenttext {
@@ -724,7 +734,11 @@ h2.workheading {
 
 .txtgrp {
     margin-bottom: 30px;
-    /*border: red 1px solid;*/
+    /*border: red 2px solid;*/
+}
+
+.txtgrp ul {
+    list-style-position: inside;
 }
 
 .txtgrp h3 {
@@ -734,14 +748,14 @@ h2.workheading {
     line-height: 30px;
 }
 
-.txtgrp p {
+.txtgrp p, .txtgrp ul {
     font-size: 14px;
     line-height: 21px;
     margin-top: 1%;
-    
 }
 
 .txtgrp a {
+    color: #47B9D1;
     text-decoration: none;
 }
 
@@ -1032,6 +1046,15 @@ h2.workheading {
 .contactinfo p {
     margin: 0;
     padding: 0;
+}
+
+#contactinfo a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#contactinfo a:hover{
+    opacity: 0.5;
 }
 
 
