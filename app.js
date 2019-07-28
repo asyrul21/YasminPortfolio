@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var expressSanitizer = require('express-sanitizer');
 var session = require('express-session');
 var flash = require('express-flash');
-// var popup = require('popups');
+var path = require('path');
 
 var app = express();
 
@@ -94,6 +94,14 @@ app.post('/about' , function(req, res){
     }
   });
 })
+
+// download resume
+app.get('/download/:file(*)',(req, res) => {
+  var file = req.params.file;
+  var fileLocation = path.join('./uploads',file);
+  console.log('File location:', fileLocation);
+  res.download(fileLocation, file);
+});
 
 
 // AJAX CALLS
