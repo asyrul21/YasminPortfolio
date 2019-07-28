@@ -642,14 +642,22 @@ h2.workheading {
 }
 
 .workphoto {
-    background-size: cover;
+    background-size: fill;
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position: center;
     opacity: 0.95;
     
     flex: 1;
-    height: 50vh;
+    height: 60vh;
+}
+
+#duitnowid {
+    height: 70vh;
+}
+
+#letitburnid {
+    height: 40vh;
 }
 
 /* Duit now photos */

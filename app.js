@@ -73,6 +73,8 @@ app.post('/about' , function(req, res){
     // to fix gmail problem when pushed to heroku, enable Display Lock Capcha 
     // on the Gmail account settings
 };
+//hello!
+
 
   var transporter = nodemailer.createTransport(smtpConfig);
   
