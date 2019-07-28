@@ -67,9 +67,9 @@ app.post('/about' , function(req, res){
     },
 
     // disable this line when migrating to real server
-    tls: {
-      rejectUnauthorized: false
-    }
+    // tls: {
+    //   rejectUnauthorized: false
+    // }
 };
 
   var transporter = nodemailer.createTransport(smtpConfig);
