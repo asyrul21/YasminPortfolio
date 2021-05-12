@@ -10,7 +10,7 @@
     "express-flash": "0.0.2",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.16.2",
-    "nodemailer": "^6.2.1",
+    "nodemailer": "^6.4.16",
     "popup": "0.0.3",
     "popups": "^1.1.3"
   },
